@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - (CDN is Buffering)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: rgb(0, 110, 255);
+            margin: 0;
+            font-family: "Microsoft YaHei";
+        }
+        
+        body div {
+            position: absolute;
+            top: calc(50% - 207px);
+            width: 100%;
+        }
+        
+        body div i {
+            font-style: normal;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            border-radius: 100%;
+            display: block;
+            margin: 0 auto;
+            background: #fff;
+            text-align: center;
+            color: rgb(0, 110, 255);
+            font-size: 6em;
+            font-family: "Microsoft YaHei";
+        }
+        
+        body div p,
+        body div h2 {
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            margin-top: 20px;
+        }
+        
+        body div blockquote {
+            background: #fff;
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 6px;
+            padding: 10px;
+            overflow-y: auto;
+            color: #5a5f69;
+        }
+        
+        body div blockquote::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        
+        body div blockquote::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #888;
+        }
+        
+        body div a,
+        body div a:hover,
+        body div a:focus {
+            transition: all .35s;
+            width: 100px;
+            display: block;
+            color: #fff;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-decoration: none;
+            outline: none;
+            border: 1px solid #fff;
+            border-radius: 6px;
+            text-align: center;
+            line-height: 33px;
+        }
+        
+        body div a:hover {
+            background: rgba(255, 255, 255, .2);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <i style="font-size: 165px;">!</i>
+        <h2>Index - (CDN is Buffering)</h2>
+        <p id="url">url</p>
+        <p>CDN is Buffering or Access Denied</p>
+        <blockquote id="home1">home</blockquote>
+        <a href="javascript:location.reload();">Refresh</a>
+    </div>
+</body>
+<script>
+    var url = window.location.href;
+    var home = window.location.host;
+    document.getElementById('url').innerHTML = url;
+    document.getElementById('home1').innerHTML = home;
+</script>
+
+</html>
