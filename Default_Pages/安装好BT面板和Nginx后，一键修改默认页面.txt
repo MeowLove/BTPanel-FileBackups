@@ -1,0 +1,6 @@
+﻿安装好BT面板和Nginx后，一键修改默认页面
+
+wget -O /www/server/panel/data/defaultDoc.html https://raw.githubusercontent.com/MeowLove/BTPanel-FileBackups/master/Default_Pages/defaultDoc.html
+wget -O /www/server/panel/data/404.html https://raw.githubusercontent.com/MeowLove/BTPanel-FileBackups/master/Default_Pages/404.html
+wget -O /www/server/nginx/html/index.html https://raw.githubusercontent.com/MeowLove/BTPanel-FileBackups/master/Default_Pages/index.html
+wget -O /www/server/stop/index.htm https://raw.githubusercontent.com/MeowLove/BTPanel-FileBackups/master/Default_Pages/stop.html
